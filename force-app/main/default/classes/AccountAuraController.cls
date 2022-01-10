@@ -6,6 +6,7 @@ public class AccountAuraController {
         List<Account> accList = [SELECT Id,Name,AccountNumber,AccountSource,AnnualRevenue,Type,Industry,Owner.Name,CreatedBy.Name 
                                     from Account order By LastModifiedDate DESC LIMIT 10];
                                     System.debug('hello');
+                                    System.debug('hello');
         return accList;
     }
     @AuraEnabled
