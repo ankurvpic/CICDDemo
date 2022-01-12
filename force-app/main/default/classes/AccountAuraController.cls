@@ -7,6 +7,7 @@ public class AccountAuraController {
                                     from Account order By LastModifiedDate DESC LIMIT 10];
                                     System.debug('hello');
                                     System.debug('hello');
+        System.debug('debug from from Feature V1');
         return accList;
     }
     @AuraEnabled
