@@ -5,9 +5,12 @@ public class AccountAuraController {
         //get all contact list
         List<Account> accList = [SELECT Id,Name,AccountNumber,AccountSource,AnnualRevenue,Type,Industry,Owner.Name,CreatedBy.Name 
                                     from Account order By LastModifiedDate DESC LIMIT 10];
+
                                     System.debug('hello');
                                     System.debug('hello');
         System.debug('debug from from Feature V1');
+                                    
+
         return accList;
     }
     @AuraEnabled
