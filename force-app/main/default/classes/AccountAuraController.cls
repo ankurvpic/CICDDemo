@@ -5,7 +5,7 @@ public class AccountAuraController {
         //get all contact list
         List<Account> accList = [SELECT Id,Name,AccountNumber,AccountSource,AnnualRevenue,Type,Industry,Owner.Name,CreatedBy.Name 
                                     from Account order By LastModifiedDate DESC LIMIT 10];
-                                    
+        System.debug('this is new debug from Feature V2');                      
         return accList;
     }
     @AuraEnabled
